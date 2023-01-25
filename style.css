@@ -1,0 +1,55 @@
+/*Both*/
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+nav{
+    display: flex;
+    background-color: #0d1b2a;
+    justify-content: space-between;
+}
+#logo{
+    width: 120px;
+    
+}
+ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    margin: auto;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: all .5s ease;
+  }
+  
+  li a:hover {
+    background-color: #111;
+    box-shadow:0 0 10px  #e0e1dd;
+  }
+/*Home*/
+#epites{
+background-color:#778da9  ;
+}
+#bontas{
+background-color: #1b263b;
+}
+#szallitas{
+background-color:#415a77 ;
+}
+
+
+
+/*Referencies*/
