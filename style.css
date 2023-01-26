@@ -1,55 +1,141 @@
-/*Both*/
-*{
-    box-sizing: border-box;
-    padding: 0%;
-    margin: 0%;
+html {
+  background-color: #E0E1DD;
 }
-nav{
-    display: flex;
-    background-color: #0d1b2a;
-    justify-content: space-between;
+
+* {
+  box-sizing: border-box;
+
 }
-#logo{
-    width: 120px;
-    
+
+
+nav {
+  display: flex;
+  background-color: #0d1b2a;
+  justify-content: space-between;
 }
+
+#logo {
+  width: 120px;
+
+}
+
 ul {
 
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    margin: auto;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: all .5s ease;
-  }
-  
-  li a:hover {
-    background-color: #111;
-    box-shadow:0 0 10px  #e0e1dd;
-  }
-/*Home*/
-#epites{
-background-color:#778da9  ;
-}
-#bontas{
-background-color: #1b263b;
-}
-#szallitas{
-background-color:#415a77 ;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
+li {
+  float: left;
+}
 
+li a {
+  margin: auto;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: all .5s ease;
+}
+
+li a:hover {
+  background-color: #111;
+  box-shadow: 0 0 10px #e0e1dd;
+}
+
+footer {
+  background-color: #e0e1dd;
+
+}
 
 /*Referencies*/
+#referencia {
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  margin: auto;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row>.column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: #E0E1DD;
+  padding: 10px;
+}
+
+
+section {
+  width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "h h h"
+                      "p i i"
+                       "p i i";
+}
+
+.indexh2 {
+  grid-area: h;
+}
+
+.indexp {
+  grid-area: p;
+}
+
+.indeximg {
+  grid-area: i;
+}
+
+
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
